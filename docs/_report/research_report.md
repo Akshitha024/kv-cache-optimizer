@@ -37,9 +37,9 @@ The simulator's cost-model constants are calibrated to the headline numbers repo
 
 ```mermaid
 flowchart LR
-  A[Workload generator\n(mixed | uniform)] --> B[Simulator]
-  B --> C{Attention variant\n(Flash | Paged | Chunked-prefill)}
-  B --> D{Eviction policy\n(LRU | LFU | Time)}
+  A["Workload generator\n(mixed | uniform)"] --> B[Simulator]
+  B --> C{"Attention variant\n(Flash | Paged | Chunked-prefill)"}
+  B --> D{"Eviction policy\n(LRU | LFU | Time)"}
   B --> E[RunResult: throughput, peak KV, p50, p99, evictions]
   E --> F[5 chart families + summary.json]
 ```
