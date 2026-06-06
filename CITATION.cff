@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: kv-cache-optimizer
+message: "KV-cache benchmarking and eviction-policy ablation across attention variants."
+authors:
+  - family-names: "Lingampally"
+    given-names: "Akshitha Reddy"
+date-released: "2024-04-18"
+version: "0.5.0"
+license: "MIT"
+url: "https://github.com/Akshitha024/kv-cache-optimizer"
+keywords:
+  - "llm-inference"
+  - "kv-cache"
+  - "paged-attention"
+  - "chunked-prefill"

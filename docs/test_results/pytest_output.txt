@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.13.3, pytest-9.0.3, pluggy-1.6.0 -- /Users/mani/Projects/akshitha-portfolio/projects/kv-cache-optimizer/.venv/bin/python3
+cachedir: .pytest_cache
+hypothesis profile 'default'
+rootdir: /Users/mani/Projects/akshitha-portfolio/projects/kv-cache-optimizer
+configfile: pyproject.toml
+testpaths: tests
+plugins: hypothesis-6.155.2, cov-7.1.0
+collecting ... collected 13 items
+
+tests/test_attention.py::test_all_variants_have_profile PASSED           [  7%]
+tests/test_attention.py::test_flash_no_paging PASSED                     [ 15%]
+tests/test_attention.py::test_chunked_prefill_supports_chunked PASSED    [ 23%]
+tests/test_eviction.py::test_lru_evicts_oldest_access PASSED             [ 30%]
+tests/test_eviction.py::test_lfu_evicts_least_used PASSED                [ 38%]
+tests/test_eviction.py::test_time_evicts_oldest_insertion PASSED         [ 46%]
+tests/test_simulator.py::test_simulate_completes_small_workload PASSED   [ 53%]
+tests/test_simulator.py::test_simulate_evicts_when_oversized PASSED      [ 61%]
+tests/test_simulator.py::test_runner_writes_summary PASSED               [ 69%]
+tests/test_workload.py::test_mixed_workload_count PASSED                 [ 76%]
+tests/test_workload.py::test_mixed_workload_seed_determinism PASSED      [ 84%]
+tests/test_workload.py::test_uniform_workload_constant_lengths PASSED    [ 92%]
+tests/test_workload.py::test_mixed_workload_has_long_tail PASSED         [100%]
+
+============================== 13 passed in 0.52s ==============================

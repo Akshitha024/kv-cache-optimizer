@@ -1,0 +1,24 @@
+.............                                                            [100%]
+================================ tests coverage ================================
+_______________ coverage: platform darwin, python 3.13.3-final-0 _______________
+
+Name                              Stmts   Miss  Cover
+-----------------------------------------------------
+src/kvopt/__init__.py                 1      0   100%
+src/kvopt/attention/__init__.py       0      0   100%
+src/kvopt/attention/variants.py      13      0   100%
+src/kvopt/cli/__init__.py             0      0   100%
+src/kvopt/cli/main.py                24     24     0%
+src/kvopt/eviction/__init__.py        0      0   100%
+src/kvopt/eviction/policies.py       30      0   100%
+src/kvopt/runner.py                  23      0   100%
+src/kvopt/sim/__init__.py             0      0   100%
+src/kvopt/sim/simulator.py           65      1    98%
+src/kvopt/types.py                   26      0   100%
+src/kvopt/viz/__init__.py             0      0   100%
+src/kvopt/viz/charts.py              80      0   100%
+src/kvopt/workload/__init__.py        0      0   100%
+src/kvopt/workload/generator.py      16      0   100%
+-----------------------------------------------------
+TOTAL                               278     25    91%
+13 passed in 0.76s
